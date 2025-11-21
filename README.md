@@ -109,7 +109,7 @@ root
 
 
 # Running the Project 
-*(VS Code recommended)*
+*(VSCode recommended)*
 
 1. Run the **prediction.py**
 
