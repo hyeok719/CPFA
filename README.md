@@ -44,18 +44,18 @@ This project follows a four-stage workflow:
 The downloaded files should be organized as follows:
 
 root
-├── input_data
-│ ├── input_surface.npy
-│ └── ...
-├── output_data
-├── pangu_weather_1.onnx
-├── pangu_weather_3.onnx
-├── pangu_weather_6.onnx
-├── pangu_weather_24.onnx
-├── inference_cpu.py
-├── inference_iterative.py
-├── visualization.py
-└── evaluation.py
+├── input_data  
+│ ├── input_surface.npy  
+│ └── ...  
+├── output_data  
+├── pangu_weather_1.onnx  
+├── pangu_weather_3.onnx  
+├── pangu_weather_6.onnx  
+├── pangu_weather_24.onnx  
+├── inference_cpu.py  
+├── inference_iterative.py  
+├── visualization.py  
+└── evaluation.py  
 
 ## 2. Create a Virtual Environment
 
