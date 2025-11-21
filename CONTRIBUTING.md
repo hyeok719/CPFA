@@ -28,6 +28,16 @@ We’d love to feature real user stories to inspire others.
 Open an Issue or submit a Pull Request at any time.
 Bug reports, improvements, questions, and suggestions are all welcome.
 
+✔ 7) Branching Model  
+The main branch is protected for code stability.  
+All feature development must be done in short-lived feature branches.  
+Direct commits to main are not allowed. All changes must be merged through a Pull Request (PR).
+
+✔ 8) Pull Request Management (PR hygiene)  
+Link the related Issue when creating a PR (e.g., “Closes #12”).  
+Request at least one reviewer before merging.  
+Ensure that all automated checks (tests, lint, CI workflows) pass before merging.
+
 ## Running Tests
 
 ```python
@@ -37,5 +47,6 @@ pytest
 
 
 We appreciate your contributions to make **CPFA** better for everyone!
+
 
 
