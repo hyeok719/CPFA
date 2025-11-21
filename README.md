@@ -44,10 +44,12 @@ This project follows a four-stage workflow:
 The downloaded files should be organized as follows:
 
 root  
+├── download_data 
+│ └── ... 
 ├── input_data  
-│ ├── input_surface.npy  
 │ └── ...  
-├── output_data  
+├── output_data 
+│ └── ... 
 ├── pangu_weather_1.onnx  
 ├── pangu_weather_3.onnx  
 ├── pangu_weather_6.onnx  
@@ -103,7 +105,7 @@ root
 ### 4-3. File Download
 - Ensure *Terms of Use* is set to **Accepted**.  
 - Click **Submit form**.  
-- Download the generated file and place it inside the `input_data` folder.
+- Download the generated file and place it inside the `download_data` folder.
 
 ---
 
