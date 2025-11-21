@@ -44,12 +44,12 @@ This project follows a four-stage workflow:
 The downloaded files should be organized as follows:
 
 root  
-├── download_data 
-│ └── ... 
-├── input_data  
+├── download_data  
 │ └── ...  
-├── output_data 
-│ └── ... 
+├── input_data   
+│ └── ...  
+├── output_data  
+│ └── ...  
 ├── pangu_weather_1.onnx  
 ├── pangu_weather_3.onnx  
 ├── pangu_weather_6.onnx  
