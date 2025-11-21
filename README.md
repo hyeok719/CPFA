@@ -43,7 +43,7 @@ This project follows a four-stage workflow:
 ## 1. Folder Structure
 The downloaded files should be organized as follows:
 
-root
+root  
 ├── input_data  
 │ ├── input_surface.npy  
 │ └── ...  
