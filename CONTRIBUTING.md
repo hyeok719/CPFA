@@ -30,9 +30,12 @@ Bug reports, improvements, questions, and suggestions are all welcome.
 
 ## Running Tests
 
-'''pytest'''
+```python
+pytest
+```
 
 
 
 We appreciate your contributions to make **CPFA** better for everyone!
+
 
