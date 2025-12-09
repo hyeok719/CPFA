@@ -182,7 +182,7 @@ If you encounter unexpected behavior, broken functionality, or issues during ins
     - Steps to reproduce
     - Error logs and stack traces
     - System details (OS, Python version, hardware)
-    - Expected behavior vs. actual behavior
+    - Expected behavior vs. actual behavior  
 **→ GitHub Issues: https://github.com/hyeok719/CPFA/issues**
 
 ---
@@ -190,22 +190,22 @@ If you encounter unexpected behavior, broken functionality, or issues during ins
 # References
 Below is a list of key resources and research materials referenced in the CPFA project:
 
-- Pangu-Weather: Forecasting With Advanced Deep Learning Models
+- Pangu-Weather: Forecasting With Advanced Deep Learning Models  
     A foundational model used for climate prediction within this project.
 
-- ERA5 Reanalysis Data (ECMWF)
+- ERA5 Reanalysis Data (ECMWF)  
     The primary climate reanalysis dataset used for input and evaluation.
 
-- Xarray Documentation
+- Xarray Documentation  
     For handling multidimensional climate data structures.
 
-- Cartopy Documentation
+- Cartopy Documentation  
     Used for geographic visualization and map projections.
 
-- NumPy & SciPy Libraries
+- NumPy & SciPy Libraries  
     Essential for numerical computing and data preprocessing.
 
-- Matplotlib
+- Matplotlib  
     Used for generating climate maps, vector field plots, and statistical figures.
 ---
 
