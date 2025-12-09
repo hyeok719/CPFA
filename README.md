@@ -36,6 +36,14 @@ This project follows a four-stage workflow:
 - Visit https://www.python.org/  
 - Download and install Python 3.9.2.
 
+## 4. Download model  
+Please download the four pre-trained models (~1.1GB each) from Google drive or Baidu netdisk:  
+- The 1-hour model (pangu_weather_1.onnx): 'https://drive.google.com/file/d/1fg5jkiN_5dHzKb-5H9Aw4MOmfILmeY-S/view'
+- The 3-hour model (pangu_weather_3.onnx): 'https://drive.google.com/file/d/1EdoLlAXqE9iZLt9Ej9i-JW9LTJ9Jtewt/view'
+- The 6-hour model (pangu_weather_6.onnx):  'https://drive.google.com/file/d/1a4XTktkZa5GCtjQxDJb_fNaqTAUiEJu4/view'
+- The 24-hour model (pangu_weather_24.onnx): 'https://drive.google.com/file/d/1lweQlxcn9fG0zKNW8ne1Khr9ehRTI6HP/view'
+
+
 ---
 
 # How to Use the Project
@@ -43,21 +51,21 @@ This project follows a four-stage workflow:
 ## 1. Folder Structure
 The downloaded files should be organized as follows:
 
-root  
-├── download_data  
-│ └── ...  
-├── input_data   
-│ └── ...  
-├── output_data  
-│ └── ...  
-├── pangu_weather_1.onnx  
-├── pangu_weather_3.onnx  
-├── pangu_weather_6.onnx  
-├── pangu_weather_24.onnx  
-├── inference_cpu.py  
-├── inference_iterative.py  
-├── visualization.py  
-└── evaluation.py  
+root
+├── download_data
+│   └── ...
+├── input_data
+│   └── ...
+├── output_data
+│   └── ...
+├── pangu_weather_1.onnx
+├── pangu_weather_3.onnx
+├── pangu_weather_6.onnx
+├── pangu_weather_24.onnx
+├── prediction.py
+├── transform_nc_to_npy.py
+├── visualization.py
+└── evaluation.py
 
 ## 2. Create a Virtual Environment
 
@@ -87,19 +95,37 @@ root
 1. Visit https://cds.climate.copernicus.eu/  
 2. Sign up and log in.  
 3. Navigate to:  
-   **Datasets → ERA5 monthly averaged data on single levels from 1940 to present**
-
+   input_surface.npy → ERA5 monthly averaged data on single levels from 1940 to present  
+   input_upper.npy → ERA5 monthly averaged data on pressure levels from 1940 to present
 ### 4-2 Download Settings
-- **Product type:** Monthly averaged reanalysis by hour of day  
-- **Variables (must be selected in this order):**  
-  1. Mean sea level pressure  
-  2. 10m u-component of wind  
-  3. 10m v-component of wind  
-  4. 2m temperature  
-- **Year / Month / Time:** Select desired range  
-- **Geographical area:** Whole available region  
-- **Data format:** NetCDF4 (Experimental)  
-- **Download format:** Unarchived  
+- **input_surface.npy**
+
+  - **Product type**: Monthly averaged reanalysis by hour of day
+  - **Variables** (in this order):  
+
+     1. Mean sea level pressure  
+     2. 10m u-component of wind  
+     3. 10m v-component of wind  
+     4. 2m temperature  
+
+  - **Year / Month / Time**: select the desired range
+  - **Geographical area**: global coverage
+  - **Data format**: NetCDF4 (experimental)
+  - **Download format**: unarchived file  
+
+- **input_upper.npy**
+   - **Product type**: Monthly averaged reanalysis by hour of day
+   - **Variables** (in this order):  
+     1. Geopotential  
+     2. Specific humidity  
+     3. Temperature   
+     4. U-component of wind   
+     5. V-component of wind  
+   - **Pressure level**: 1000hPa, 925hPa, 850hPa, 700hPa, 600hPa, 500hPa, 400hPa, 300hPa, 250hPa, 200hPa, 150hPa, 100hPa and 50hPa in the exact order  
+   - **Year / Month / Time**: select the desired range  
+   - **Geographical area**: global coverage  
+   - **Data format**: NetCDF4 (experimental)  
+   - **Download format**: unarchived file  
 
 
 ### 4-3. File Download
@@ -114,10 +140,12 @@ root
 *(VSCode recommended)*
 
 1. Run the **prediction.py**
+   
+2. Run the **transform_nc_to_npy.py**
 
-2. Run the **visualization.py**.  
+3. Run the **visualization.py**.  
 
-3. Run the **evaluation.py**.
+4. Run the **evaluation.py**.
 
 
 ---
@@ -138,13 +166,47 @@ root
 ---
 
 # Bugs & Debugging
-*(To be updated as the project evolves.)*
+If you encounter unexpected behavior, broken functionality, or issues during installation or execution, please follow the steps below:
+
+1. Check the Documentation
+    Review the troubleshooting section in the official documentation to verify whether your issue is already addressed.
+
+2. Verify Your Environment
+    Ensure that your Python version, required libraries, and OS environment match the supported configurations described in the docs.
+
+3. Reproduce the Issue
+    Try to reproduce the bug in a clean environment (e.g., a new virtual environment) to confirm that the issue is project-related.
+
+4. Submit a Bug Report
+    If the problem persists, please open an issue in the GitHub repository with the following information:
+    - Steps to reproduce
+    - Error logs and stack traces
+    - System details (OS, Python version, hardware)
+    - Expected behavior vs. actual behavior
+**→ GitHub Issues: https://github.com/hyeok719/CPFA/issues**
 
 ---
 
 # References
-*(To be added as needed.)*
+Below is a list of key resources and research materials referenced in the CPFA project:
 
+- Pangu-Weather: Forecasting With Advanced Deep Learning Models
+    A foundational model used for climate prediction within this project.
+
+- ERA5 Reanalysis Data (ECMWF)
+    The primary climate reanalysis dataset used for input and evaluation.
+
+- Xarray Documentation
+    For handling multidimensional climate data structures.
+
+- Cartopy Documentation
+    Used for geographic visualization and map projections.
+
+- NumPy & SciPy Libraries
+    Essential for numerical computing and data preprocessing.
+
+- Matplotlib
+    Used for generating climate maps, vector field plots, and statistical figures.
 ---
 
 # Version & Update History
