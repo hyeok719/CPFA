@@ -94,10 +94,10 @@ The project files should be organized as follows:
     ├── pangu_weather_3.onnx
     ├── pangu_weather_6.onnx
     ├── pangu_weather_24.onnx
-    ├── inference_cpu.py          (or prediction script)
-    ├── inference_iterative.py    (optional iterative prediction)
+    ├── prediction.py
     ├── visualization.py
     └── evaluation.py
 
 Make sure the ONNX model files and scripts are placed at the project
 root as shown above.
+
