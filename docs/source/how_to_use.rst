@@ -36,30 +36,27 @@ ERA5 Download Guide
 1. Visit the Copernicus Climate Data Store (CDS).
 2. Sign up and log in.
 3. Navigate to:
-
-   *input_surface.npy → ERA5 monthly averaged data on single levels
-   from 1940 to present*  
-   *input_upper.npy → ERA5 monthly averaged data on pressure levels from 1940 to present*
+input_surface.npy → ERA5 monthly averaged data on single levels from 1940 to present  
+input_upper.npy → ERA5 monthly averaged data on pressure levels from 1940 to present
 
 4. Use the following settings:
-  **input_surface.npy**
-   - **Product type**: Monthly averaged reanalysis by hour of day
-   - **Variables** (in this order):
+**input_surface.npy**
+  - **Product type**: Monthly averaged reanalysis by hour of day
+  - **Variables** (in this order):
 
      1. Mean sea level pressure  
      2. 10m u-component of wind  
      3. 10m v-component of wind  
      4. 2m temperature  
 
-   - **Year / Month / Time**: select the desired range
-   - **Geographical area**: global coverage
-   - **Data format**: NetCDF4 (experimental)
-   - **Download format**: unarchived file  
+  - **Year / Month / Time**: select the desired range
+  - **Geographical area**: global coverage
+  - **Data format**: NetCDF4 (experimental)
+  - **Download format**: unarchived file  
 
 **input_upper.npy**  
    - **Product type**: Monthly averaged reanalysis by hour of day  
    - **Variables** (in this order):  
-
      1. Geopotential  
      2. Specific humidity  
      3. Temperature   
@@ -143,6 +140,7 @@ Recommended Editor
 CPFA can be run entirely from Anaconda Prompt, but using **Visual
 Studio Code (VS Code)** is recommended for easier script execution,
 debugging, and inspection of outputs.
+
 
 
 
