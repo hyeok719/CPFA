@@ -1,6 +1,7 @@
 ---
 layout: page
 title: CPFA
+permalink: /
 ---
 ## Project Overview
 An open-source project designed to make climate prediction models and complex meteorological data easy to use for undergraduate students and non-experts.
