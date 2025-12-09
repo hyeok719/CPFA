@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "CPFA"
+title: CPFA
 subtile: ': Climate Prediction for All'
 banner: 'images/pngtree-sunrise-over-the-earth-from-space-image_2605140.jpg'
 ---
