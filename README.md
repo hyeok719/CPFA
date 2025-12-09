@@ -93,7 +93,9 @@ root
 ### Structure of `input_surface.npy`
 - Shape: **(4, 721, 1440)**
 - Order: `[MSLP, U10, V10, T2M]`
-
+### Structure of `input_upper.npy`
+- Shape: **(5, 13, 721, 1440)**
+- Order: `[z, q, t, u,v]`
 ### 4-1. ERA5 Download Guide
 1. Visit https://cds.climate.copernicus.eu/  
 2. Sign up and log in.  
