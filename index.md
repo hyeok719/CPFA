@@ -1,8 +1,6 @@
 ---
 layout: home
 title: CPFA
-subtile: ': Climate Prediction for All'
-banner: 'images/pngtree-sunrise-over-the-earth-from-space-image_2605140.jpg'
 ---
 ## Project Overview
 An open-source project designed to make climate prediction models and complex meteorological data easy to use for undergraduate students and non-experts.
