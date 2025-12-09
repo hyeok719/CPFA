@@ -76,6 +76,17 @@ With the environment activated, install the required packages:
 
 After installation, the environment is ready to run CPFA.
 
+Download model
+----------------
+Please download the four pre-trained models (~1.1GB each) from Google drive or Baidu netdisk:  
+
+The 1-hour model (pangu_weather_1.onnx): 'https://drive.google.com/file/d/1fg5jkiN_5dHzKb-5H9Aw4MOmfILmeY-S/view'  
+The 3-hour model (pangu_weather_3.onnx): 'https://drive.google.com/file/d/1EdoLlAXqE9iZLt9Ej9i-JW9LTJ9Jtewt/view'  
+The 6-hour model (pangu_weather_6.onnx):  'https://drive.google.com/file/d/1a4XTktkZa5GCtjQxDJb_fNaqTAUiEJu4/view'  
+The 24-hour model (pangu_weather_24.onnx): 'https://drive.google.com/file/d/1lweQlxcn9fG0zKNW8ne1Khr9ehRTI6HP/view'  
+
+
+
 Folder Structure
 ----------------
 
@@ -101,5 +112,6 @@ The project files should be organized as follows:
 
 Make sure the ONNX model files and scripts are placed at the project
 root as shown above.
+
 
 
