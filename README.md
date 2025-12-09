@@ -142,9 +142,9 @@ root
 # Running the Project 
 *(VSCode recommended)*
 
-1. Run the **prediction.py**
-   
-2. Run the **transform_nc_to_npy.py**
+1. Run the **transform_nc_to_npy.py**
+
+2. Run the **prediction.py**
 
 3. Run the **visualization.py**.  
 
