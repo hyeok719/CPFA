@@ -11,15 +11,6 @@ github_username: hyeok719
 # Build settings
 remote_theme: jekyll-theme-cayman
 
-nav:
-  - name: "Home"
-    link: "/"
-  - name: "Features"
-    link: "/features"
-  - name: "Community"
-    link: "/community"
-  - name: "Contact"
-    link: "/contact"
 
 defaults:
   home:
