@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: page
 title: "Community"
 permalink: /community/
 ---
@@ -33,6 +33,7 @@ If you would like to receive important announcements and release updates via ema
 - 🛠 **Users & Support Mailing List**  
   - For installation questions, usage discussions, and environment setup support
   - 'woobin723@gmail.com'
+
 
 
 
