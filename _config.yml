@@ -9,7 +9,7 @@ url: "https://hyeok719.github.io"
 github_username: hyeok719
 
 # Build settings
-remote_theme: jekyll-theme-modernist
+remote_theme: jekyll-theme-minima
 
 header_pages:
   - index.md
