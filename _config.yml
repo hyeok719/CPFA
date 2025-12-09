@@ -1,0 +1,23 @@
+title: CPFA(Climate Prediction For All)
+email: 
+  - woobin723@gmail.com
+  - jjang@gmail.com
+
+
+baseurl: "/CPFA/HOMEPAGE"
+url: "https://github.com/hyeok719/CPFA"
+github_username: hyeok719
+
+# Build settings
+theme: jekyll-theme-yat
+
+header_pages:
+  - index.md
+  - features.md
+  - community.md
+  - contact.md
+
+defaults:
+  home:
+    heading: 'CPFA: Climate Prediction For All'
+    subheading: 'An Open-Source Guide for Easy Climate Prediction and Visualization for Non-Experts'
