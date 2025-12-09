@@ -9,8 +9,8 @@ Step 1: Prepare Input Data
 
 CPFA expects a surface input file with the following structure:
 
-- File name: ``input_surface.npy``
-- Location: ``input_data`` folder
+- File name: ``input_surface.npy`` 
+- Location: ``download_data`` folder
 - Shape: ``(4, 721, 1440)``
 - Order of variables:
 
@@ -18,6 +18,17 @@ CPFA expects a surface input file with the following structure:
   2. 10m u-component of wind (U10)
   3. 10m v-component of wind (V10)
   4. 2m temperature (T2M)
+
+- File name: ``input_upper.npy`` 
+- Location: ``download_data`` folder
+- Shape: ``(5, 13, 721, 1440)``
+- Order of variables:
+
+  1. z(Geopotential) 
+  2. q(Specific humidity)
+  3. t(Temperature) 
+  4. u(Zonal wind) 
+  5. v(Meridional wind)
 
 ERA5 Download Guide
 ~~~~~~~~~~~~~~~~~~~
@@ -119,3 +130,4 @@ Recommended Editor
 CPFA can be run entirely from Anaconda Prompt, but using **Visual
 Studio Code (VS Code)** is recommended for easier script execution,
 debugging, and inspection of outputs.
+
