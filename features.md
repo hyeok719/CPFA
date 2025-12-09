@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Features"
+permalink: /features/
 ---
 
 # ✨ Features
@@ -41,5 +42,6 @@ The CPFA project provides the following features:
 
 📚 For detailed usage instructions, refer to
 [Documentation (ReadTheDocs)](https://cpfa.readthedocs.io/en/main/index.html)
+
 
 
