@@ -4,8 +4,8 @@ email:
   - jjang@gmail.com
 
 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: '/CPFA'
+url: "https://hyeok719.github.io"
 github_username:  woobin723-cmd
 
 # Build settings
