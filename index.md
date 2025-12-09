@@ -150,7 +150,7 @@ For inquiries related to the CPFA project, please use the channels below.
   Example notebooks, demo scripts, and visualizations help others learn faster.
 
 
-
+----------
 
 📚 For detailed usage instructions, refer to
 [Documentation (ReadTheDocs)](https://cpfa.readthedocs.io/en/main/index.html)
