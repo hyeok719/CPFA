@@ -141,13 +141,3 @@ Recommended Editor
 CPFA can be run entirely from Anaconda Prompt, but using **Visual
 Studio Code (VS Code)** is recommended for easier script execution,
 debugging, and inspection of outputs.
-
-
-
-
-
-
-
-
-
-
