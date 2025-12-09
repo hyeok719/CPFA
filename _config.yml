@@ -4,8 +4,8 @@ email:
   - jjang@gmail.com
 
 
-baseurl: "/CPFA/HOMEPAGE"
-url: "https://github.com/hyeok719/CPFA"
+baseurl: "/CPFA"
+url: "https://hyeok719.github.io"
 github_username: hyeok719
 
 # Build settings
