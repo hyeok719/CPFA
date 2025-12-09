@@ -9,8 +9,9 @@ url: "https://hyeok719.github.io"
 github_username: hyeok719
 
 # Build settings
-theme: jekyll-theme-yat
-
+remote_theme: 'jeffreytse/jekyll-theme-yat'
+plugins:
+  - jekyll-theme-yat
 header_pages:
   - index.md
   - features.md
