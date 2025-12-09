@@ -37,11 +37,12 @@ ERA5 Download Guide
 2. Sign up and log in.
 3. Navigate to:
 
-   *Datasets → ERA5 monthly averaged data on single levels
+   *input_surface.npy → ERA5 monthly averaged data on single levels
    from 1940 to present*
+   *input_upper.npy → ERA5 monthly averaged data on pressure levels from 1940 to present*
 
 4. Use the following settings:
-
+  **input_surface.npy**
    - **Product type**: Monthly averaged reanalysis by hour of day
    - **Variables** (in this order):
 
@@ -53,14 +54,36 @@ ERA5 Download Guide
    - **Year / Month / Time**: select the desired range
    - **Geographical area**: global coverage
    - **Data format**: NetCDF4 (experimental)
-   - **Download format**: unarchived file
+   - **Download format**: unarchived file  
 
-5. Accept the terms of use, submit the form, and download the file.
-6. Place the downloaded ERA5 file in the ``download_data`` folder.
-7. Convert the downloaded data into ``input_surface.npy`` according
-   to the required shape and order, and place it in ``input_data``.
+**input_upper.npy**  
+   - **Product type**: Monthly averaged reanalysis by hour of day  
+   - **Variables** (in this order):  
 
-Step 2: Run the Prediction
+     1. Geopotential  
+     2. Specific humidity  
+     3. Temperature   
+     4. U-component of wind   
+     5. V-component of wind  
+   - **Pressure level**: 1000hPa, 925hPa, 850hPa, 700hPa, 600hPa, 500hPa, 400hPa, 300hPa, 250hPa, 200hPa, 150hPa, 100hPa and 50hPa in the exact order  
+   - **Year / Month / Time**: select the desired range  
+   - **Geographical area**: global coverage  
+   - **Data format**: NetCDF4 (experimental)  
+   - **Download format**: unarchived file  
+
+5. Accept the terms of use, submit the form, and download the file.  
+6. Place the downloaded ERA5 files in the ``download_data`` folder.  
+
+Step 2: Transformate file
+--------------------------
+Run 
+.. code-block:: bash
+
+    python transform_nc_to_npy.py  
+
+Check whether the newly generated data has been successfully created in the input_data folder.  
+
+Step 3: Run the Prediction
 --------------------------
 
 With the virtual environment activated and input data prepared, move
@@ -68,9 +91,7 @@ to the project root in Anaconda Prompt and run:
 
 .. code-block:: bash
 
-    python inference_cpu.py
-
-(or the designated prediction script for your repository.)
+    python prediction.py
 
 This script performs the following tasks:
 
@@ -79,16 +100,8 @@ This script performs the following tasks:
 - Executes the forward prediction
 - Stores prediction results in the ``output_data`` folder
 
-If iterative prediction is supported in your setup, you can optionally
-run:
 
-.. code-block:: bash
-
-    python inference_iterative.py
-
-to generate predictions over multiple lead times.
-
-Step 3: Visualization
+Step 4: Visualization
 ---------------------
 
 After predictions are generated, you can visualize the results using:
@@ -107,7 +120,7 @@ figures such as:
 The plots are usually saved as image files (e.g. PNG) under the
 ``output_data`` or a dedicated visualization subfolder.
 
-Step 4: Evaluation
+Step 5: Evaluation
 ------------------
 
 To evaluate model performance against ERA5 data, run:
@@ -130,4 +143,5 @@ Recommended Editor
 CPFA can be run entirely from Anaconda Prompt, but using **Visual
 Studio Code (VS Code)** is recommended for easier script execution,
 debugging, and inspection of outputs.
+
 
