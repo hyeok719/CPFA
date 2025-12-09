@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: page
 title: "Contact"
 permalink: /contact/
 ---
@@ -31,5 +31,6 @@ For inquiries related to the CPFA project, please use the channels below.
   ✔ 4) Add new examples
   If you built something cool with CPFA, please share it!
   Example notebooks, demo scripts, and visualizations help others learn faster.
+
 
 
