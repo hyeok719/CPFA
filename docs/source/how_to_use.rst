@@ -33,9 +33,9 @@ CPFA expects a surface input file with the following structure:
 ERA5 Download Guide
 ~~~~~~~~~~~~~~~~~~~
 
-1. Visit the Copernicus Climate Data Store (CDS)
-2. Sign up and log in.
-3. Navigate to:
+1. Visit the Copernicus Climate Data Store (CDS)  
+2. Sign up and log in.  
+3. Navigate to:  
 input_surface.npy → ERA5 monthly averaged data on single levels from 1940 to present  
 input_upper.npy → ERA5 monthly averaged data on pressure levels from 1940 to present
 
@@ -141,6 +141,7 @@ Recommended Editor
 CPFA can be run entirely from Anaconda Prompt, but using **Visual
 Studio Code (VS Code)** is recommended for easier script execution,
 debugging, and inspection of outputs.
+
 
 
 
