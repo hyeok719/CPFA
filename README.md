@@ -1,6 +1,6 @@
-**Please refer to the ReadTheDocs site for a more structured and detailed version of this README.**  
+# **Please refer to the ReadTheDocs site for a more structured and detailed version of this README.**  
 https://cpfa.readthedocs.io/en/main/index.html
-
+---
 # CPFA Project Overview
 
 CPFA is an **open-source project designed to make climate prediction data easy to analyze and visualize using the Pangu-Weather model**.  
