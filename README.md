@@ -211,6 +211,3 @@ Below is a list of key resources and research materials referenced in the CPFA p
 - Matplotlib  
     Used for generating climate maps, vector field plots, and statistical figures.
 ---
-
-# Version & Update History
-*(To be updated.)*
