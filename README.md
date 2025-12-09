@@ -1,3 +1,6 @@
+**Please refer to the ReadTheDocs site for a more structured and detailed version of this README.**  
+https://cpfa.readthedocs.io/en/main/index.html
+
 # CPFA Project Overview
 
 CPFA is an **open-source project designed to make climate prediction data easy to analyze and visualize using the Pangu-Weather model**.  
@@ -51,21 +54,21 @@ Please download the four pre-trained models (~1.1GB each) from Google drive or B
 ## 1. Folder Structure
 The downloaded files should be organized as follows:
 
-root
-├── download_data
-│   └── ...
-├── input_data
-│   └── ...
-├── output_data
-│   └── ...
-├── pangu_weather_1.onnx
-├── pangu_weather_3.onnx
-├── pangu_weather_6.onnx
-├── pangu_weather_24.onnx
-├── prediction.py
-├── transform_nc_to_npy.py
-├── visualization.py
-└── evaluation.py
+root  
+├── download_data  
+│   └── ...  
+├── input_data  
+│   └── ...  
+├── output_data  
+│   └── ...  
+├── pangu_weather_1.onnx  
+├── pangu_weather_3.onnx  
+├── pangu_weather_6.onnx  
+├── pangu_weather_24.onnx  
+├── prediction.py  
+├── transform_nc_to_npy.py  
+├── visualization.py  
+└── evaluation.py  
 
 ## 2. Create a Virtual Environment
 
