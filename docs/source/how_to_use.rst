@@ -41,8 +41,8 @@ input_upper.npy → ERA5 monthly averaged data on pressure levels from 1940 to p
 
 4. Use the following settings: 
 
-- **input_surface.npy**  
-  - **Product type**: Monthly averaged reanalysis by hour of day  
+- **input_surface.npy**
+  - **Product type**: Monthly averaged reanalysis by hour of day
   - **Variables** (in this order):  
 
      1. Mean sea level pressure  
@@ -55,8 +55,8 @@ input_upper.npy → ERA5 monthly averaged data on pressure levels from 1940 to p
   - **Data format**: NetCDF4 (experimental)
   - **Download format**: unarchived file  
 
-- **input_upper.npy**   
-   - **Product type**: Monthly averaged reanalysis by hour of day  
+- **input_upper.npy**
+   - **Product type**: Monthly averaged reanalysis by hour of day
    - **Variables** (in this order):  
      1. Geopotential  
      2. Specific humidity  
@@ -140,6 +140,7 @@ Recommended Editor
 CPFA can be run entirely from Anaconda Prompt, but using **Visual
 Studio Code (VS Code)** is recommended for easier script execution,
 debugging, and inspection of outputs.
+
 
 
 
